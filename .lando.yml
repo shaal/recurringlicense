@@ -1,0 +1,6 @@
+name: recurringlicense
+recipe: pantheon
+config:
+  framework: drupal8
+  site: recurringlicense
+  id: 8cd14efc-359d-427b-a308-5100c45ce1db
