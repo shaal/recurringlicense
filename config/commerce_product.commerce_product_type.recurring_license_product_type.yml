@@ -1,0 +1,10 @@
+uuid: e1d7c0d3-f362-4b7d-90b7-c6b115dce7d4
+langcode: en
+status: true
+dependencies: {  }
+id: recurring_license_product_type
+label: 'Recurring License Product Type'
+description: ''
+variationType: recurring_license_product_variat
+injectVariationFields: true
+traits: {  }

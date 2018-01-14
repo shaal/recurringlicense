@@ -1,0 +1,24 @@
+uuid: 2eb3a48d-3283-46fa-8a52-912d358cfac3
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.recurring_license_product_type
+    - commerce_product.commerce_product_variation_type.recurring_license_product_variat
+    - field.storage.commerce_product.variations
+id: commerce_product.recurring_license_product_type.variations
+field_name: variations
+entity_type: commerce_product
+bundle: recurring_license_product_type
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - recurring_license_product_variat
+field_type: entity_reference

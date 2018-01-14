@@ -1,0 +1,21 @@
+uuid: 5334fef9-2585-48e1-9f05-34bcecc33de2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.recurring_license_product_type
+    - field.storage.commerce_product.stores
+id: commerce_product.recurring_license_product_type.stores
+field_name: stores
+entity_type: commerce_product
+bundle: recurring_license_product_type
+label: Stores
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_store'
+  handler_settings: {  }
+field_type: entity_reference

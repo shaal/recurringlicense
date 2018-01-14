@@ -1,0 +1,21 @@
+uuid: c0e97f5e-b038-4f69-96c7-9686e3c1516f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.license_order_item_type
+    - field.storage.commerce_order_item.license
+id: commerce_order_item.license_order_item_type.license
+field_name: license
+entity_type: commerce_order_item
+bundle: license_order_item_type
+label: License
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_license'
+  handler_settings: {  }
+field_type: entity_reference

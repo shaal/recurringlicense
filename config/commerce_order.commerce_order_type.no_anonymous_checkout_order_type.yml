@@ -1,0 +1,21 @@
+uuid: db8572da-0d43-4467-a575-ac76c21bc5b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - commerce_checkout
+third_party_settings:
+  commerce_cart:
+    cart_form_view: commerce_cart_form
+    cart_block_view: commerce_cart_block
+  commerce_checkout:
+    checkout_flow: no_anonymous_checkout_flow
+label: 'No Anonymous Checkout Order Type'
+id: no_anonymous_checkout_order_type
+workflow: order_default
+traits: {  }
+refresh_mode: customer
+refresh_frequency: 300
+sendReceipt: true
+receiptBcc: ''

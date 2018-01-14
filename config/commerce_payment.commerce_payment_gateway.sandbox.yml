@@ -1,0 +1,19 @@
+uuid: acd94e08-bd29-4639-b55e-3c3e8747a431
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_stripe
+id: sandbox
+label: 'Stripe Sandbox'
+weight: null
+plugin: stripe
+configuration:
+  publishable_key: pk_test_ot22xh12EjgXwcYzO1jjdtsF
+  secret_key: sk_test_Jm8XqlfVl2s2XIlvksNMZORE
+  display_label: Stripe
+  mode: test
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND

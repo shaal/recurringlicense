@@ -1,0 +1,14 @@
+uuid: 764ada5d-6da5-402c-97d7-2f7b814eb1a7
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_recurring
+_core:
+  default_config_hash: 7cSxbmVeaAZ_agWrNf6XdymKX1ZYCJI3ABM1BbsfEqs
+label: 'Recurring (Standalone)'
+id: recurring_standalone
+purchasableEntityType: ''
+orderType: recurring
+traits: {  }

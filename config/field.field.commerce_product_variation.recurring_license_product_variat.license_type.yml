@@ -1,0 +1,21 @@
+uuid: 470569a0-b1ea-491b-b21d-439e66c4e3d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.recurring_license_product_variat
+    - field.storage.commerce_product_variation.license_type
+  module:
+    - commerce
+id: commerce_product_variation.recurring_license_product_variat.license_type
+field_name: license_type
+entity_type: commerce_product_variation
+bundle: recurring_license_product_variat
+label: 'License Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings: {  }
+field_type: 'commerce_plugin_item:commerce_license_type'

@@ -1,0 +1,74 @@
+uuid: 818c3449-bc05-4c51-b75e-623c47138cce
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.recurring_license_product_variat
+    - field.field.commerce_product_variation.recurring_license_product_variat.billing_schedule
+    - field.field.commerce_product_variation.recurring_license_product_variat.license_expiration
+    - field.field.commerce_product_variation.recurring_license_product_variat.license_type
+    - field.field.commerce_product_variation.recurring_license_product_variat.subscription_type
+  module:
+    - commerce
+    - commerce_price
+id: commerce_product_variation.recurring_license_product_variat.default
+targetEntityType: commerce_product_variation
+bundle: recurring_license_product_variat
+mode: default
+content:
+  billing_schedule:
+    type: options_select
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  license_expiration:
+    type: commerce_plugin_select
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  license_type:
+    type: commerce_plugin_select
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 99
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  subscription_type:
+    type: commerce_plugin_select
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

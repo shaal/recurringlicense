@@ -1,0 +1,10 @@
+uuid: c37f0c38-dee1-4bbb-b8e3-4737ecd5fc48
+langcode: en
+status: true
+dependencies: {  }
+label: 'License Order Item Type'
+id: license_order_item_type
+purchasableEntityType: commerce_product_variation
+orderType: no_anonymous_checkout_order_type
+traits:
+  - commerce_license_order_item_type

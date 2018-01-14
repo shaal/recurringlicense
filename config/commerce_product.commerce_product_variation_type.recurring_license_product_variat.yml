@@ -1,0 +1,18 @@
+uuid: 29b23b03-f030-4da0-b26a-7765426ae52d
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_license
+third_party_settings:
+  commerce_license:
+    license_types:
+      role: role
+    activate_on_place: true
+id: recurring_license_product_variat
+label: 'Recurring License Product Variation Type'
+orderItemType: license_order_item_type
+generateTitle: false
+traits:
+  - commerce_license
+  - purchasable_entity_subscription
